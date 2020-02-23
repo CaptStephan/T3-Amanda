@@ -70,3 +70,10 @@ Now you have the set-up complete and the link above gives you some test code to 
 From here you can download the inference model you would like to use and go from there.  My intent would be to
 train a new model to recognize unsafe things such as a fire not in the fireplace, a hot iron that is still on
 with no person next to it, a child too close to a hot stove, etc. The general idea is generic safety bot.
+
+There are three Python files so far, one for testing movement manually, one for testing the voice command and
+LED lights, and one generic trained model from Caffe that recognizes: aeroplane, bicycle, bird, boat, bottle,
+bus, car, cat, chair, cow, diningtable, dog, horse, motorbike, person, pottedplant, sheep, sofa, train, tvmonitor.
+
+These would all be combined and more hardware for object detection and avoidance added.  Then the combined code
+would include Google Home or Alexa implementation for personal assistant items.
