@@ -3,7 +3,7 @@ Roaming Safety Robot misc code for Raspberry Pi, a motor hat, camera, Respeaker,
 
 These are code snipets with original code by CaptStephan and publicly available code from github users (named in the code files). Some code from Intel for use with the Neural Compute Stick. Some code from hardware vendors that came with the hardware used on the demo bot.
 
-This is a very crude file set and my first github repo.
+# This is a very crude file set and my first github repo.
 
 This is how I set up the demo bot.  Some things may be different for you if you are using different hardware.
 Hardware:
@@ -34,23 +34,23 @@ Next step is the set-up for Respeaker, details from:  http://wiki.seeedstudio.co
 - sudo ./install.sh
 - reboot
 - sudo raspi-config
-- # Select 7 Advanced Options
-- # Select A4 Audio
-- # Select 1 Force 3.5mm ('headphone') jack
-- # Select Finish
+- Select 7 Advanced Options
+- Select A4 Audio
+- Select 1 Force 3.5mm ('headphone') jack
+- Select Finish
 - sudo apt update
 - sudo apt install audacity
 - audacity
-- # Open Audacity and select AC108 & 4 channels as input and bcm2835 alsa: - (hw:0:0) as output to test
-- # record any files needed for training
-- # install APA102 LED requirements
+- Open Audacity and select AC108 & 4 channels as input and bcm2835 alsa: - (hw:0:0) as output to test
+- record any files needed for training (this is how you get a custom wake word or phrase)
+- install APA102 LED requirements
 - git clone https://github.com/respeaker/4mics_hat.git
 - cd 4mics_hat
 - sudo apt install python-virtualenv
 - virtualenv --system-site-packages ~/env
 - source ~/env/bin/activate
 - pip install spidev gpiozero
-- # add the DOA (direction of arrival) requirements
+- Now add the DOA (direction of arrival) requirements:
 - sudo apt install libatlas-base-dev
 - sudo apt install python-pyaudio
 - pip install ./snowboy*.whl
@@ -60,7 +60,7 @@ Next step is the set-up for Respeaker, details from:  http://wiki.seeedstudio.co
 - cd voice-engine/
 - python setup.py install
 
-#that is the basic hardware set-up, more on page links above if needed.
+That is the basic hardware set-up, more on page links above if needed.
 
 Setting up the Movidius Neural Compute Stick on the Pi is best done following these instructions. Read the whole
 thing first and do NOT install the things he says to skip on the NCS and OpenCV. Just follow this carefully:
