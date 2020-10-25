@@ -24,7 +24,7 @@ Set-up sequence for installing I2C motor controller board:
 - sudo apt-get install python-smbus
 - sudo apt-get install i2c-tools
 - wget https://sourceforge.net/projects/u-geek/files/HATs/Raspi_MotorHAT/Raspi_MotorHAT.tar
-- tar xvzf Raspi_MotorHAT.tar
+- tar xvf Raspi_MotorHAT.tar
 - cd Raspi_MotorHAT
 - sudo apt-get install python-dev
 
