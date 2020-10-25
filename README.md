@@ -16,10 +16,12 @@ Hardware:
 - Round clear plastic robot kit for mounting everything
 - AND!!! The Intel Neural Compute Stick (first version)
 
+Start working in your home/pi directory (or directory of your choice, but modify below accordingly).
+
 Set-up sequence for installing I2C motor controller board:
 - Enable I2C in raspi-config
 - Enable SPI in raspi-config
-- Enable sudo apt-get install python-smbus
+- sudo apt-get install python-smbus
 - sudo apt-get install i2c-tools
 - wget https://sourceforge.net/projects/u-geek/files/HATs/Raspi_MotorHAT/Raspi_MotorHAT.tar
 - tar xvzf Raspi_MotorHAT.tar
